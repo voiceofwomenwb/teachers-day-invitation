@@ -1,8 +1,14 @@
+const loader = document.getElementById("loader");
+const main = document.getElementById("main");
+const envelope = document.querySelector(".envelope");
+const btn = document.getElementById("openBtn");
+
 setTimeout(() => {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("main").style.display = "flex";
+    loader.style.display = "none";
+    main.style.display = "flex";
 }, 3000);
 
-document.getElementById("openBtn").addEventListener("click", () => {
-    alert("🌸 Part 2-তে এখান থেকেই খাম খুলবে!");
+btn.addEventListener("click", () => {
+    envelope.classList.add("open");
+    btn.style.display = "none";
 });
