@@ -1,10 +1,8 @@
-const btn=document.getElementById("openBtn");
-const envelope=document.querySelector(".envelope");
+setTimeout(() => {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("main").style.display = "flex";
+}, 3000);
 
-btn.onclick=function(){
-
-envelope.classList.add("open");
-
-btn.style.display="none";
-
-}
+document.getElementById("openBtn").addEventListener("click", () => {
+    alert("🌸 Part 2-তে এখান থেকেই খাম খুলবে!");
+});
