@@ -210,3 +210,32 @@ opacity:0;
 transform:translate(22px,90px) rotate(35deg);
 opacity:0;
 }
+@keyframes fallLeft{
+0%{
+transform:translateX(0) translateY(0) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateX(-35px) translateY(170px) rotate(-120deg);
+opacity:0;
+}
+}
+
+@keyframes fallRight{
+0%{
+transform:translateX(0) translateY(0) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateX(35px) translateY(170px) rotate(120deg);
+opacity:0;
+}
+}
+
+.seal.break .left{
+animation:fallLeft .7s forwards;
+}
+
+.seal.break .right{
+animation:fallRight .7s forwards;
+}
