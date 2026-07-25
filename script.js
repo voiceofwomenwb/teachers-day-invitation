@@ -8,7 +8,7 @@ const instruction = document.getElementById("instruction");
 setTimeout(() => {
     loader.style.display = "none";
     main.style.display = "flex";
-}, 3000);
+}, 5000);
 
 // Step 1
 btn.addEventListener("click", () => {
@@ -39,9 +39,9 @@ seal.addEventListener("click", () => {
 
     setTimeout(() => {
         document.getElementById("card").classList.add("show");
-    }, 700);
+    }, 1500);
 
-}, 700);
+}, 1500);
 
 }, 200);
 
