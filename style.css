@@ -201,3 +201,12 @@ font-size:15px;
 color:#b8860b;
 font-weight:500;
 }
+.seal.break .left{
+transform:translate(-22px,90px) rotate(-35deg);
+opacity:0;
+}
+
+.seal.break .right{
+transform:translate(22px,90px) rotate(35deg);
+opacity:0;
+}
