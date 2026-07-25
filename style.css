@@ -235,3 +235,72 @@ opacity:0;
 transform:translate(35px,150px) rotate(110deg);
 opacity:0;
 }
+/* =========================
+   Invitation Card
+========================= */
+
+.invitation-card{
+position:absolute;
+left:50%;
+bottom:25px;
+transform:translateX(-50%) translateY(120%);
+width:300px;
+background:#fffdf6;
+border-radius:12px;
+padding:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+z-index:1;
+transition:1.2s ease;
+opacity:0;
+}
+
+.card-border{
+border:2px solid #d4af37;
+padding:18px;
+text-align:center;
+}
+
+.card-border h2{
+font-family:'Cinzel',serif;
+color:#b8860b;
+font-size:24px;
+margin-bottom:10px;
+}
+
+.card-border h3{
+color:#444;
+margin-bottom:15px;
+}
+
+.welcome{
+font-size:15px;
+line-height:1.7;
+color:#555;
+margin-bottom:18px;
+}
+
+.details{
+text-align:left;
+margin:15px 0;
+line-height:1.9;
+color:#444;
+}
+
+blockquote{
+font-style:italic;
+color:#8b6b00;
+margin:20px 0;
+}
+
+.from{
+margin-top:10px;
+font-weight:bold;
+color:#555;
+}
+
+/* Card বের হবে */
+
+.envelope.show-card .invitation-card{
+transform:translateX(-50%) translateY(-110px);
+opacity:1;
+}
