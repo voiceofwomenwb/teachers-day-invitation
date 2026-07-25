@@ -206,36 +206,43 @@ transform:translate(-22px,90px) rotate(-35deg);
 opacity:0;
 }
 
-.seal.break .right{
-transform:translate(22px,90px) rotate(35deg);
-opacity:0;
-}
-@keyframes fallLeft{
-0%{
-transform:translateX(0) translateY(0) rotate(0deg);
-opacity:1;
-}
-100%{
-transform:translateX(-35px) translateY(170px) rotate(-120deg);
-opacity:0;
-}
+/* ===== New Wax Seal ===== */
+
+.seal-half{
+position:absolute;
+top:0;
+width:41px;
+height:82px;
+background:#b22222;
+border:4px solid #f4d03f;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#fff8dc;
+font-weight:bold;
+font-size:18px;
+transition:all .7s ease;
+box-shadow:0 8px 18px rgba(0,0,0,.25);
 }
 
-@keyframes fallRight{
-0%{
-transform:translateX(0) translateY(0) rotate(0deg);
-opacity:1;
+.left-half{
+left:0;
+border-right:none;
+border-radius:42px 0 0 42px;
 }
-100%{
-transform:translateX(35px) translateY(170px) rotate(120deg);
+
+.right-half{
+right:0;
+border-left:none;
+border-radius:0 42px 42px 0;
+}
+
+.seal.break .left-half{
+transform:translate(-35px,150px) rotate(-110deg);
 opacity:0;
 }
-}
 
-.seal.break .left{
-animation:fallLeft .7s forwards;
-}
-
-.seal.break .right{
-animation:fallRight .7s forwards;
+.seal.break .right-half{
+transform:translate(35px,150px) rotate(110deg);
+opacity:0;
 }
