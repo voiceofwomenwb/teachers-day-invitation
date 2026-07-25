@@ -34,8 +34,14 @@ seal.addEventListener("click", () => {
     seal.classList.add("break");
 
     setTimeout(() => {
-        envelope.classList.add("open");
+
+    envelope.classList.add("open");
+
+    setTimeout(() => {
+        envelope.classList.add("show-card");
     }, 700);
+
+}, 700);
 
 }, 200);
 
