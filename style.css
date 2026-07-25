@@ -23,7 +23,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 background:linear-gradient(135deg,#fffef9,#f9efcf);
-animation:hideLoader 3s forwards;
+animation:hideLoader 5s forwards;
 z-index:999;
 }
 
