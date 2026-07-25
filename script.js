@@ -30,11 +30,13 @@ seal.addEventListener("click", () => {
 
     setTimeout(() => {
 
-        seal.style.transform = "translateX(-50%) scale(1)";
-seal.style.opacity = "0";
-seal.style.transform = "translateX(-50%) scale(0)";
-        envelope.classList.add("open");
+    seal.style.transform = "translateX(-50%) scale(1)";
+    seal.classList.add("break");
 
-    },200);
+    setTimeout(() => {
+        envelope.classList.add("open");
+    }, 700);
+
+}, 200);
 
 });
