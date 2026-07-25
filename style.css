@@ -77,18 +77,25 @@ animation:float 3s ease-in-out infinite;
 }
 
 .seal{
-width:70px;
-height:70px;
+position:absolute;
+top:85px;
+left:50%;
+transform:translateX(-50%);
+width:78px;
+height:78px;
 border-radius:50%;
-background:#d4af37;
-color:white;
+background:#b22222;
+color:#fff8dc;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:30px;
-margin:auto;
-margin-top:-70px;
-box-shadow:0 10px 20px rgba(0,0,0,.2);
+font-size:18px;
+font-weight:bold;
+letter-spacing:1px;
+box-shadow:0 8px 18px rgba(0,0,0,.25);
+z-index:10;
+cursor:pointer;
+transition:.3s;
 }
 
 .envelope h1{
@@ -169,4 +176,22 @@ transform:rotateX(180deg);
 
 .envelope.open{
 transform:translateY(-10px);
+}
+#seal.glow{
+animation:glow 1.2s infinite;
+}
+
+@keyframes glow{
+0%,100%{
+box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
+50%{
+box-shadow:0 0 25px rgba(212,175,55,.9);
+}
+}
+#instruction{
+margin-top:15px;
+font-size:15px;
+color:#b8860b;
+font-weight:500;
 }
