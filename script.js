@@ -39,6 +39,9 @@ seal.addEventListener("click", () => {
 
     setTimeout(() => {
         document.getElementById("card").classList.add("show");
+const music = document.getElementById("bgMusic");
+music.volume = 0.35;
+music.play().catch(() => {});
 setTimeout(() => {
 
 const flowers = document.getElementById("flowers");
