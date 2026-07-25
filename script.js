@@ -31,7 +31,8 @@ seal.addEventListener("click", () => {
     setTimeout(() => {
 
         seal.style.transform = "translateX(-50%) scale(1)";
-
+seal.style.opacity = "0";
+seal.style.transform = "translateX(-50%) scale(0)";
         envelope.classList.add("open");
 
     },200);
