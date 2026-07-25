@@ -43,26 +43,25 @@ setTimeout(() => {
 
 const flowers = document.getElementById("flowers");
 
-for(let i=0;i<35;i++){
+setInterval(() => {
 
 const flower = document.createElement("div");
 
 flower.className = "flower";
 flower.innerHTML = "🌸";
 
-flower.style.left = Math.random()*100 + "vw";
-flower.style.animationDelay = Math.random()*2 + "s";
-flower.style.fontSize = (20 + Math.random()*20) + "px";
+flower.style.left = Math.random() * 100 + "vw";
+flower.style.fontSize = (18 + Math.random() * 18) + "px";
 
 flowers.appendChild(flower);
 
-setTimeout(()=>{
-flower.remove();
-},8000);
+setTimeout(() => {
+    flower.remove();
+}, 7000);
 
-}
+}, 400);
 
-},1000);
+}, 1000);
     }, 1500);
 
 }, 1500);
