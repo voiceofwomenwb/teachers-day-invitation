@@ -39,6 +39,30 @@ seal.addEventListener("click", () => {
 
     setTimeout(() => {
         document.getElementById("card").classList.add("show");
+setTimeout(() => {
+
+const flowers = document.getElementById("flowers");
+
+for(let i=0;i<35;i++){
+
+const flower = document.createElement("div");
+
+flower.className = "flower";
+flower.innerHTML = "🌸";
+
+flower.style.left = Math.random()*100 + "vw";
+flower.style.animationDelay = Math.random()*2 + "s";
+flower.style.fontSize = (20 + Math.random()*20) + "px";
+
+flowers.appendChild(flower);
+
+setTimeout(()=>{
+flower.remove();
+},8000);
+
+}
+
+},1000);
     }, 1500);
 
 }, 1500);
